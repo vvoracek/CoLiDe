@@ -112,8 +112,10 @@ def save_pdf(output, name):
     ptext = '<font size=12>Variance of errors of a single protein : %.6f</font>' %output.var
     Report.append(Paragraph(ptext, styles["Justify"]))
     Report.append(Spacer(1, 12))
-
-    ptext = '<font size=12>GC content : %.6f</font>' %output.gc
+    try:
+        ptext = '<font size=12>GC content : %.6f</font>' %output.gc
+    except:
+        ptext = '<font size=12>GC content : ' + output.gc + '</font>' 
     Report.append(Paragraph(ptext, styles["Justify"]))
     Report.append(Spacer(1, 12))
 

@@ -207,8 +207,12 @@ class TribaseString:
             code += translate_triplets(codon)
             codons = [i + j for i, j in zip(codons, t.codons)]
         PA = ProteinAnalysis(translate(code))
-
-        return codons, GC(code), PA.molecular_weight()
+        gc = GC(code)
+        try:
+            w = PA.molecular_weight()
+        except:
+            w = 0
+        return codons, gc, w
 
     def get_statistics(self, number_of_samples = 10**3):
         errors = []
