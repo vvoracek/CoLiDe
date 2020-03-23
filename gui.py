@@ -200,6 +200,8 @@ class Gui:
                 for line in f:
                     if('spiked' in line):
                         self.spikedsv.set('1')
+                    if('degenerated' in line):
+                        self.spikedsv.set('2')            
                     if('=' in line):
                         if('\n' in line):
                             line = line.split('\n')[0]
