@@ -119,12 +119,12 @@ ppastoris = [0.56, 0.44, 0.15, 0.33,
              0.59, 0.41, 0.58, 0.42, 
              0.43, 0.14, 0.32, 0.10]
 
-options = {'      e.coli':ecoli,
-           '       yeast':yeast,
-           '       human':human,
-           '       mouse':mouse,
-           '       insect':insect,
-           '     p.pastoris':ppastoris}
+options = {'E.coli':ecoli,
+           'S.cerevisiae':yeast,
+           'H.sapiens':human,
+           'M.musculus':mouse,
+           'S.frugiperda':insect,
+           'P.pastoris':ppastoris}
 
 
 names = [" F "," L "," I "," M "," V "," P "," A "," W ",

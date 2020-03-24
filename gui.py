@@ -81,13 +81,12 @@ class Gui:
         tk.Label(self.root, text="model distribution").grid(row=r, column = 0)
         self.listbox = tk.Listbox(self.root, height = 7, selectmode = 'SINGLE')
         for option in data.options:
-            self.listbox.insert(tk.END, option)
-        self.listbox.selection_set(0)
+            self.listbox.insert(tk.END, " "+option)
 
-        self.listbox.insert(tk.END, "        none")
+        self.listbox.insert(tk.END, " none")
         self.listbox.grid(row = r, column = 1)
         r += 1
-
+        self.listbox.selection_set(6)
         self.listbox.configure(exportselection=False)
 
         tk.Label(self.root, text="reassign codons").grid(row=r, column = 0)
@@ -406,6 +405,8 @@ class Gui:
         img = ImageTk.PhotoImage(img)
         self.panel.configure(image = img)
         self.panel.image=img
+        self.text_field_string.delete('1.0', tk.END)
+        self.text_field_string.insert(tk.END, self.output.output_string)
 
 if(__name__ == '__main__'):
     Gui()
