@@ -303,7 +303,7 @@ class Gui:
 
         spiked_codons = self.spikedsv.get() == "1"
         try:
-            model_distribution = data.options[self.listbox.get(self.listbox.curselection()[0])]
+            model_distribution = dc(data.options[self.listbox.get(self.listbox.curselection()[0])[1:]])
         except:
             model_distribution = None
 
