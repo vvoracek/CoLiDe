@@ -442,7 +442,7 @@ class Output:
         plt.savefig(buf, format='png')
         return Image.open(buf)
 
-class Decoot:
+class Colide:
     def __init__(self, parameters):
         self.parameters = parameters
 
