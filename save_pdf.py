@@ -1,6 +1,6 @@
 import time
 import data
-from decoot import Output
+from colide import Output
 from reportlab.lib.enums import TA_JUSTIFY
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, 
@@ -21,11 +21,11 @@ def save_pdf(output, name):
                             rightMargin=72,leftMargin=72,
                             topMargin=72,bottomMargin=18)
     Report=[]
-    logo = "decoot.png"
+    # logo = "decoot.png"
     formatted_time = time.ctime()
-    im = Image(logo, 2*inch, 1*inch)
-    Report.append(im)
-    Report.append(Spacer(1, 12))
+    # im = Image(logo, 2*inch, 1*inch)
+    # Report.append(im)
+    # Report.append(Spacer(1, 12))
     styles.add(ParagraphStyle(name='Justify', alignment=TA_JUSTIFY))
     ptext = '<font size=12>%s</font>' % formatted_time
     Report.append(Paragraph(ptext, styles["Normal"]))
