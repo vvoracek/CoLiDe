@@ -1,4 +1,4 @@
-from decoot import Decoot, Parameters, Output, BasesToCodons
+from colide import Colide, Parameters, Output, BasesToCodons
 import data
 import matplotlib
 matplotlib.use("TkAgg")
@@ -20,7 +20,7 @@ import platform
 
 class Gui:
     def __init__(self):
-        self.root = tk.Tk(className = 'deCOOT')
+        self.root = tk.Tk(className = 'CoLiDe')
         self.root.resizable(height = None, width = None)
         W, H = self.root.winfo_screenwidth(), self.root.winfo_screenheight()
         self.SIZE=500
@@ -319,8 +319,8 @@ class Gui:
             return
         self.root.update()
         parameters = Parameters(model_distribution, threshold, spiked_codons, removed_triplets, vec2fit, length, b2c)
-        decoot = Decoot(parameters)
-        output = decoot()
+        colide = Colide(parameters)
+        output = colide()
         self.output = output
         self.output.removed_triplets = rmv
         if(not self.output):
