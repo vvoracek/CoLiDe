@@ -175,7 +175,7 @@ class Gui:
 
     def callback_export(self):
         now = datetime.datetime.now()
-        name = "decoot_" + str(now).replace(" ", "_").replace(".", "-").replace(":", ";")
+        name = "CoLiDe_" + str(now).replace(" ", "_").replace(".", "-").replace(":", ";")
         self.output.img.save("sequence_" + name + ".png")
         self.output.graph_error.save("graph_" + name + ".png")
         save_pdf(self.output, name)
