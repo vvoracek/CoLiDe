@@ -178,6 +178,9 @@ class Gui:
         name = "CoLiDe_" + str(now).replace(" ", "_").replace(".", "-").replace(":", ";")
         self.output.img.save("sequence_" + name + ".png")
         self.output.graph_error.save("graph_" + name + ".png")
+        with open("output_string_" + name + ".txt", 'w') as f:
+            f.write(self.output.output_string)
+            f.write("\n")
         save_pdf(self.output, name)
     
 
