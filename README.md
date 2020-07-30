@@ -4,3 +4,8 @@ on first use run command inside quotation marks "conda install --file requiremen
 2) run the command inside quotation marks "python gui.py"
 
 The software was developed in the Klara Hlouchova Research Group, see http://khlab.org/.
+
+
+![manual](manual.png)
+
+
