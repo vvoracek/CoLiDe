@@ -31,6 +31,7 @@ on first use run command inside quotation marks "conda install --file requiremen
 # Documentation
 
 A short version of a documentation follows. For the full documentation, follow [this link](colidemanual.pdf)
+
 <img src="manual.png">
 
 
