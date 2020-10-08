@@ -16,7 +16,7 @@ CoLiDe: Combinatorial Library Design tool for probing protein sequence space
 Tretyachenko V, Voráček V, Souček R, Fujishima K, and Hlouchová K.
 Bioinformatics 2020 
 ```
-The source code is released under the MIT License. See the License file for details. 
+The source code is released under the MIT License. See the [License](LICENSE) file for details. 
 
 
 
@@ -30,7 +30,8 @@ on first use run command inside quotation marks "conda install --file requiremen
 
 # Documentation
 
-A short version of a documentation follows. For the full documentation, follow [this link](colidemanual.pdf)
+A short version of a documentation follows. For the full documentation, follow [this link](colidemanual.pdf).
+
 
 <img src="manual.png">
 
