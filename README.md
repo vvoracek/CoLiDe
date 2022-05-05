@@ -39,8 +39,7 @@ A short version of a documentation follows. For the full documentation, follow [
 # Contact
 The software was developed in the Klara Hlouchova Research Group, see http://khlab.org/.
 
-For any question, you can contact voracva1@fel.cvut.cz
-
+For any question, you can contact vaclav.voracek@uni-tuebingen.de
 
 # Citation
 If you use this codebase or any part of it for a publication, please cite:
